@@ -28,8 +28,12 @@ Vue.component('chat-component', require('./components/ChatComponent.vue').defaul
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import 'v-toaster/dist/v-toaster.css'
 import VueChatScroll from 'vue-chat-scroll'
 Vue.use(VueChatScroll)
+ 
+import Toaster from 'v-toaster'
+Vue.use(Toaster, {timeout: 5000})
 
 const app = new Vue({
     el: '#app',
