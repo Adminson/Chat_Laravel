@@ -32,3 +32,12 @@ Route::post('getOldMessage','ChatController@getOldMessage');
 Route::get('check',function(){
 	return session('chat');
 });
+
+
+
+
+//voting 
+
+Route::get('/admin/vote/{counterId}', 'VoteController@adminCounter');
+Route::get('/vote/{counterId}', 'VoteController@vote');
+Route::post('vote', 'VoteController@startVote');

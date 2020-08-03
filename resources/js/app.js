@@ -21,6 +21,8 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('chat-component', require('./components/ChatComponent.vue').default);
+Vue.component('admin-vote-component', require('./components/AdminVoteComponent.vue').default);
+Vue.component('vote-component', require('./components/VoteComponent.vue').default);
 // Vue.component('message-component', require('./components/message.vue').default);
 
 /**
